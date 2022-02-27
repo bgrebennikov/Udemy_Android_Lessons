@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">DiffExample</string>
+    <string name="sort_age">Sort by name</string>
+    <string name="sort_emp">Sort by employment state</string>
+</resources>

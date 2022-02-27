@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+
+    <data>
+
+        <variable
+            name="city"
+            type="String" />
+
+        <variable
+            name="temperature"
+            type="Integer" />
+
+        <variable
+            name="viewModel"
+            type="com.edricaazaza.coroutineslearning.viewModels.MainViewModel" />
+
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="12dp"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/cityText"
+            style="@style/TextViewName"
+            android:text="@string/city_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/cityValue"
+            style="@style/TextViewValue"
+            app:layout_constraintBottom_toBottomOf="@+id/cityText"
+            app:layout_constraintStart_toEndOf="@+id/cityText"
+            app:layout_constraintTop_toTopOf="@+id/cityText"
+            android:text="@{city}"
+            />
+
+        <TextView
+            android:id="@+id/tmpText"
+            style="@style/TextViewName"
+            android:text="@string/temperature_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cityText" />
+
+        <TextView
+            android:id="@+id/tmpValue"
+            style="@style/TextViewValue"
+            app:layout_constraintBottom_toBottomOf="@+id/tmpText"
+            app:layout_constraintStart_toEndOf="@+id/tmpText"
+            app:layout_constraintTop_toTopOf="@+id/tmpText"
+            tools:text="@string/temperature_value"
+            temperature="@{temperature}"
+            />
+
+        <Button
+            android:id="@+id/downloadBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/download_btn_text"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <ProgressBar
+            android:id="@+id/progress_circular"
+            android:visibility="gone"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/black"
+            android:backgroundTint="@color/black"
+            android:progressTint="@color/black"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>

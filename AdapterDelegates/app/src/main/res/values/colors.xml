@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+
+    <color name="colorPrimary">#FFBB86FC</color>
+    <color name="colorPrimaryVariant">#8E50F1</color>
+    <color name="colorSecondary">#8EECF5</color>
+    <color name="colorSecondaryVariant">#A3C4F3</color>
+    <color name="colorOnSecondary">#FF000000</color>
+    <color name="colorOnPrimary">#FFFFFFFF</color>
+
+    <color name="baseBlack">#0C0C0C</color>
+    <color name="baseWhite">#FEFEFE</color>
+
+</resources>

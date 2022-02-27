@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CoroutinesLearning</string>
+    <string name="city_text">City:</string>
+    <string name="temperature_text">Temperature:</string>
+    <string name="temperature_value">%s°C</string>
+    <string name="generate_btn_text">Generate</string>
+    <string name="download_btn_text">Download</string>
+</resources>
